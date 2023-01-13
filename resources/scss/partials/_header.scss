@@ -1,0 +1,41 @@
+header {
+    & .header-top{
+        background-color: var(--blue-color);
+    }
+    & .header-bottom{
+        & .logo{
+            max-width: 4.375rem;
+            margin: 20px 0;
+        }
+        & .header__nav ul li{
+            margin: 0 1.25rem;
+            & a{
+                text-decoration: none;
+                color: black;
+                & i{
+                    color: var(--blue-color);
+                }
+            }
+        }
+        & .search-form{
+            border-bottom: 3px solid var(--blue-color);
+            & input{
+                width: 8.125rem;
+                border: none;
+                &::placeholder{
+                    text-align: right;
+                    color: #4c4646;
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            & .search-icon {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
