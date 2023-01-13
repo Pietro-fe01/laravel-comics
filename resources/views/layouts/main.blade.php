@@ -15,7 +15,7 @@
     @include('partials.header')
 
     <!-- Main -->
-    <main class="py-5">
+    <main>
         @yield('main-content')
     </main>
 
