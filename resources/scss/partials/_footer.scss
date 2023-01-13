@@ -6,11 +6,15 @@ footer {
         position: relative;
         overflow: hidden;
         & .footer-top__menu{
-            & ul{
+            & ul li{
                 list-style: none;
                 & a{
                     color: rgba($color: #fff, $alpha: .5);
                     text-decoration: none;
+                    &:hover{
+                        color: white;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
