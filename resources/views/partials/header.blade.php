@@ -19,14 +19,14 @@
             <ul class="d-flex list-unstyled my-0">
                 <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
                 <li><a href="{{ route('comics') }}">COMICS</a></li>
-                <li><a href="/movies">MOVIES</a></li>
-                <li><a href="/tv">TV</a></li>
-                <li><a href="/games">GAMES</a></li>
-                <li><a href="/ccollectibles">COLLECTIBLES</a></li>
-                <li><a href="/videos">VIDEOS</a></li>
-                <li><a href="/fans">FANS</a></li>
-                <li><a href="/news">NEWS</a></li>
-                <li><a href="/shop">SHOP <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="{{ route('movies') }}">MOVIES</a></li>
+                <li><a href="{{ route('tv') }}">TV</a></li>
+                <li><a href="{{ route('games') }}">GAMES</a></li>
+                <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
+                <li><a href="{{ route('videos') }}">VIDEOS</a></li>
+                <li><a href="{{ route('fans') }}">FANS</a></li>
+                <li><a href="{{ route('news') }}">NEWS</a></li>
+                <li><a href="{{ route('shop') }}">SHOP <i class="fa-solid fa-caret-down"></i></a></li>
             </ul>
         </nav>
 
