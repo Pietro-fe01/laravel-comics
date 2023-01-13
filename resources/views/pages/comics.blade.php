@@ -28,42 +28,16 @@
         <button class="comics-load-more-btn mb-4">LOAD MORE</button>
     </section>
 
+    {{-- Cards Pre footer --}}
     <section class="comics-pre-footer">
         <div class="comics-cards container d-flex justify-content-between align-items-center">
-            <div class="comics-card ms-5">
-                <a href="#" class="comics-card__info">
-                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
-                    <p>DIGITAL COMICS</p>
-                </a>
-            </div>
-
-            <div class="comics-card">
-                <a href="#" class="comics-card__info">
-                    <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
-                    <p>DIGITAL COMICS</p>
-                </a>
-            </div>
-
-            <div class="comics-card">
-                <a href="#" class="comics-card__info">
-                    <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
-                    <p>DIGITAL COMICS</p>
-                </a>
-            </div>
-
-            <div class="comics-card">
-                <a href="#" class="comics-card__info">
-                    <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
-                    <p>DIGITAL COMICS</p>
-                </a>
-            </div>
-
-            <div class="comics-card me-5">
-                <a href="#" class="comics-card__info">
-                    <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
-                    <p>DIGITAL COMICS</p>
-                </a>
-            </div>
-        </div>
+            @foreach ($cards as $card)
+                <div class="comics-card ms-5">
+                    <a href="#" class="comics-card__info">
+                        <img src="{{ Vite::asset('resources/img/') }}{{ $card['img'] }}" alt="">
+                        <p>{{ $card['card_name'] }}</p>
+                    </a>
+                </div>
+            @endforeach
     </section>
 @endsection

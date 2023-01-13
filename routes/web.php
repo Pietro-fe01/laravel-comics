@@ -18,8 +18,30 @@ Route::get('/characters', function () {
 
 Route::get('/', function () {
     $comics_database = config('comics-db');
+    $cards = [
+        [
+            'img' => 'buy-comics-digital-comics.png',
+            'card_name' => 'DIGITAL COMICS',
+        ],
+        [
+            'img' => 'buy-comics-merchandise.png',
+            'card_name' => 'DC MERCHANDISE',
+        ],
+        [
+            'img' => 'buy-comics-subscriptions.png',
+            'card_name' => 'SUBSCRIPTION',
+        ],
+        [
+            'img' => 'buy-comics-shop-locator.png',
+            'card_name' => 'COMIC SHOP LOCATOR',
+        ],
+        [
+            'img' => 'buy-dc-power-visa.svg',
+            'card_name' => 'DC POWER VISA',
+        ],
+    ];
 
-    return view('pages/comics', compact('comics_database'));
+    return view('pages/comics', compact('comics_database', 'cards'));
 })->name('comics');
 
 Route::get('/movies', function () {
