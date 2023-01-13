@@ -12,6 +12,6 @@
 
 @section('main-content')
     <section class="hero">
-        section hero
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
     </section>
 @endsection

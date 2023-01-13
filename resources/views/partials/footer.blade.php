@@ -73,19 +73,19 @@
                 <h5 class="m-0 me-2">FOLLOW-US</h5>
 
                 <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="facebook-social-icon">
                 </a>
                 <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="twitter-social-icon">
                 </a>
                 <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="youtube-social-icon">
                 </a>
                 <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="pinterest-social-icon">
                 </a>
                 <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="periscope-social-icon">
                 </a>
             </div>
         </div>
