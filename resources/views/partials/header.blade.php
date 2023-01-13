@@ -1,3 +1,48 @@
+@php
+    $header_menu = [
+        [
+            'label' => 'CHARACTERS',
+            'active' => false,
+        ],
+        [
+            'label' => 'COMICS',
+            'active' => false,
+        ],
+        [
+            'label' => 'MOVIES',
+            'active' => false,
+        ],
+        [
+            'label' => 'TV',
+            'active' => false,
+        ],
+        [
+            'label' => 'GAMES',
+            'active' => false,
+        ],
+        [
+            'label' => 'COLLECTIBLES',
+            'active' => false,
+        ],
+        [
+            'label' => 'VIDEOS',
+            'active' => false,
+        ],
+        [
+            'label' => 'FANS',
+            'active' => false,
+        ],
+        [
+            'label' => 'NEWS',
+            'active' => false,
+        ],
+        [
+            'label' => 'SHOP',
+            'active' => false,
+        ]
+    ];
+@endphp
+
 <header>
     <div class="header-top text-white">
         <div class="container d-flex justify-content-end py-1">
@@ -17,16 +62,14 @@
 
         <nav class="header__nav">
             <ul class="d-flex list-unstyled my-0">
-                <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
-                <li><a href="{{ route('comics') }}">COMICS</a></li>
-                <li><a href="{{ route('movies') }}">MOVIES</a></li>
-                <li><a href="{{ route('tv') }}">TV</a></li>
-                <li><a href="{{ route('games') }}">GAMES</a></li>
-                <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
-                <li><a href="{{ route('videos') }}">VIDEOS</a></li>
-                <li><a href="{{ route('fans') }}">FANS</a></li>
-                <li><a href="{{ route('news') }}">NEWS</a></li>
-                <li><a href="{{ route('shop') }}">SHOP <i class="fa-solid fa-caret-down"></i></a></li>
+                @foreach ($header_menu as $link)
+                    <li>
+                        <a href="{{ route(Str::lower($link['label'])) }}">
+                            {{ $link['label'] }}
+                            <i @if ($loop->index === count($header_menu ) - 1) class="fa-solid fa-caret-down" @endif ></i>
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
 
