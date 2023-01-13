@@ -1,0 +1,27 @@
+footer {
+    color: white;
+    & .footer-top{
+        background-image: url('/resources/img/footer-bg.jpg');
+        & .footer-top__menu{
+            & ul{
+                list-style: none;
+                & a{
+                    color: rgba($color: #fff, $alpha: .5);
+                    text-decoration: none;
+                }
+            }
+        }
+        & small{
+            color: rgba($color: #fff, $alpha: .5);
+            & .em-phrase{
+                color: var(--blue-color);
+                &:hover a {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+    & .footer-bottom{
+        background-color: #303030;
+    }
+}

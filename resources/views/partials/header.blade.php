@@ -1,6 +1,6 @@
 <header>
     <div class="header-top text-white">
-        <div class="container d-flex justify-content-end">
+        <div class="container d-flex justify-content-end py-1">
             <small>DC POWER℠ VISA&#174;</small>
             <small>
                 <a href="#" class="ms-5 text-white text-decoration-none">
