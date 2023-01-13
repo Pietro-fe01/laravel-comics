@@ -19,9 +19,26 @@ main{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding-top: 3.125rem;
+        padding-top: 60px;
+        position: relative;
+
+        &::before{
+            content: "CURRENT SERIES";
+            font-size: 27px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 60px;
+            display: block;
+            width: 260px;
+            height: 60px;
+            background-color: red;
+            position: absolute;
+            top: -1.875rem;
+            left: 0;
+            background-color: var(--blue-color);
+        }
     
-        .comics-magazine{
+        & .comics-magazine{
             width: calc(100% / 6 - 30px);
             margin: 0 .9375rem;
             margin-bottom: 2.1875rem;
@@ -80,6 +97,39 @@ main{
     
             &:hover{
                 filter: drop-shadow(0 0 5px white);
+            }
+        }
+    }
+
+    /*----------------------------
+        PREFOOTER SECTION DC BAR
+    ----------------------------*/
+    .comics-pre-footer{
+        background-color: var(--blue-color);
+        padding: 2.5rem 0;
+
+        & .comics-cards{
+            & .comics-card:nth-child(4) img{
+                width: 1.875rem;
+            }
+            & .comics-card__info{
+                display: flex;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    filter:drop-shadow(0 0 5px white)
+                }
+
+                & img{
+                    width: 2.5rem;
+                    margin-right: .625rem;
+                }
+
+                & p{
+                    margin: 0;
+                }
             }
         }
     }
