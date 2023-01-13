@@ -5,7 +5,7 @@ header {
     & .header-bottom{
         & .logo{
             max-width: 4.375rem;
-            margin: 20px 0;
+            margin: 1.25rem 0;
         }
         & .header__nav ul li{
             margin: 0 1.25rem;
@@ -18,7 +18,7 @@ header {
             }
         }
         & .search-form{
-            border-bottom: 3px solid var(--blue-color);
+            border-bottom: 2px solid var(--blue-color);
             & input{
                 width: 8.125rem;
                 border: none;
@@ -33,7 +33,7 @@ header {
                 }
             }
             & .search-icon {
-                font-size: 20px;
+                font-size: 1.25rem;
                 cursor: pointer;
             }
         }
