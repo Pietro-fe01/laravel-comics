@@ -66,7 +66,7 @@
                     <li>
                         <a href="{{ route(Str::lower($link['label'])) }}">
                             {{ $link['label'] }}
-                            <i @if ($loop->index === count($header_menu ) - 1) class="fa-solid fa-caret-down" @endif ></i>
+                            <i @if ($link['label'] === 'SHOP')) class="fa-solid fa-caret-down" @endif ></i>
                         </a>
                     </li>
                 @endforeach
