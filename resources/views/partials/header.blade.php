@@ -11,7 +11,9 @@
         </div>
     </div>
     <div class="header-bottom container d-flex align-items-center justify-content-between">
-        <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo-DC-image">
+        <a href="#">
+            <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo-DC-image">
+        </a>
 
         <nav class="header__nav">
             <ul class="d-flex list-unstyled my-0">
