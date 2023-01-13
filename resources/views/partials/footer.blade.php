@@ -47,6 +47,29 @@
             'DC Power Visa'
         ]
     ];
+
+    $social_links = [
+        [
+            'name' => 'Facebook',
+            'image' => 'footer-facebook.png'
+        ],
+        [
+            'name' => 'Twitter',
+            'image' => 'footer-twitter.png'
+        ],
+        [
+            'name' => 'Youtube',
+            'image' => 'footer-youtube.png'
+        ],
+        [
+            'name' => 'Pinterest',
+            'image' => 'footer-pinterest.png'
+        ],
+        [
+            'name' => 'Periscope',
+            'image' => 'footer-periscope.png'
+        ]
+    ];
 @endphp
 
 
@@ -111,21 +134,11 @@
             <div class="follow-us">
                 <h5 class="m-0 me-2">FOLLOW-US</h5>
 
-                <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="facebook-social-icon">
-                </a>
-                <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="twitter-social-icon">
-                </a>
-                <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="youtube-social-icon">
-                </a>
-                <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="pinterest-social-icon">
-                </a>
-                <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="periscope-social-icon">
-                </a>
+                @foreach ($social_links as $social)
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/') }}{{ $social['image'] }} " alt="{{ $social['name'] }}-social-icon">
+                    </a>
+                @endforeach
             </div>
         </div>
     </div>
