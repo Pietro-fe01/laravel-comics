@@ -64,8 +64,30 @@
     </div>
 
     <div class="footer-bottom">
-        <div class="container py-4">
-            <button>SIGN-UP NOW!</button>
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <div class="sign-up">
+                <button>SIGN-UP NOW!</button>
+            </div>
+
+            <div class="follow-us">
+                <h5 class="m-0 me-2">FOLLOW-US</h5>
+
+                <a href="#">
+                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
+                </a>
+            </div>
         </div>
     </div>
 </footer>

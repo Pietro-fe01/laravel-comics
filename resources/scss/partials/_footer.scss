@@ -23,5 +23,41 @@ footer {
     }
     & .footer-bottom{
         background-color: #303030;
+        & .sign-up button{
+            color: white;
+            border: 2.5px solid var(--blue-color);
+            padding: .625rem .9375rem;
+            background-color: transparent;
+
+            &:hover{
+                background-color: rgba($color: white, $alpha: 0.2);
+                animation: shake 0.1s linear;
+            }
+            @keyframes shake{
+                0% {
+                    transform: rotate(-10deg);
+                }
+                100% {
+                    transform: rotate(10deg);
+                }
+            }
+        }
+        & .follow-us{
+            display: flex;
+            align-items: center;
+
+            & h5{
+                color: var(--blue-color);
+            }
+
+            & img{
+                margin-left: 1.25rem;
+                object-fit: cover;
+
+                &:hover{
+                    filter: drop-shadow(0 0 4px white);
+                }
+            }
+        }
     }
 }
