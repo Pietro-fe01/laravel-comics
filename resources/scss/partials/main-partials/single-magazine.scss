@@ -1,6 +1,6 @@
 .ms-container-small{
     width: 100%;
-    width: 1000px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -20,5 +20,27 @@
     & .magazine__title{
         color: var(--dark-single-magazine);
         text-transform: uppercase;
+    }
+
+    & .magazine__check-disponibility{
+        background-color: #55ba59;
+        // padding: 15px 25px;
+        border-bottom: 2px solid #357739;
+        & .available{
+            border-right: 2px solid #357739;
+        }
+        & button{
+            border: none;
+            cursor: pointer;
+        }
+        & .ms_light-green{
+            color: #bafd9c;
+        }
+    }
+    & .magazine__adv .adv__title{
+        color: #55555a;
+        text-align: right;
+        margin-right: 42px;
+        margin-bottom: 5px;
     }
 }
