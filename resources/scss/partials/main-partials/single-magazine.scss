@@ -15,7 +15,7 @@
     }
 }
 
-.magazine__info{
+.magazine__shop{
     background-color: white;
     & .magazine__title{
         color: var(--dark-single-magazine);
@@ -42,5 +42,50 @@
         text-align: right;
         margin-right: 42px;
         margin-bottom: 5px;
+    }
+}
+
+.magazine__info{
+    background-color: #f6f6f6;
+    border-top: 1px solid #e3e3e3;
+    & .magazine__art-by{
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        & small{
+            width: 30%;
+        }
+        & p{
+            width: 70%;
+            color: #17a9db;
+        }
+    }
+    & .magazine__written-by{
+        border-bottom: 1px solid #e3e3e3;
+        & small{
+            width: 30%;
+        }
+        & p{
+            width: 70%;
+            color: #17a9db;
+        }
+    }
+    & .magazine__specs {
+        & div:last-child{
+            border-bottom: 1px solid #e3e3e3;
+        }
+        & div{
+            border-top: 1px solid #e3e3e3;
+            & small{
+                width: 30%;
+            }
+            & span{
+                width: 70%;
+            }
+            & .magazine__specs-series{
+                text-transform: uppercase;
+                color: #17a9db;
+                font-weight: 500;
+            }
+        }
     }
 }
