@@ -19,6 +19,9 @@
 
         <!-- Main -->
         <main class="text-white">
+            <section class="comics-jumbotron">
+                <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
+            </section>
             @yield('main-content')
         </main>
 

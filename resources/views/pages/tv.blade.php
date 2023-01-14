@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('page-title')
-    Tv
+    Comics
 @endsection
 
 @section('main-content')
-    <H1 class="m-0">TV</H1>
+    <H1 class="m-0">Comic</H1>
 @endsection

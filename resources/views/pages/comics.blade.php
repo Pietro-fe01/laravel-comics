@@ -13,14 +13,16 @@
         @foreach ($comics_database as $comic)
         <!-- Singola CARD magazine -->
         <div class="comics-magazine">
-            <div class="comics-magazine__image">
-                <img src="{{ $comic['thumb'] }}" alt="">
-                <span class="comics-price">{{ $comic['price'] }}</span>
-            </div>
-            <div class="comics-magazine__title">
-                <span class="comics-title">{{ $comic['title'] }}</span>
-                <small class="comics-genre">{{ $comic['type'] }}</small>
-            </div>
+            <a href="{{ $comic['href_title'] }}"" class="text-decoration-none text-white">
+                <div class="comics-magazine__image">
+                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <span class="comics-price">{{ $comic['price'] }}</span>
+                </div>
+                <div class="comics-magazine__title">
+                    <span class="comics-title">{{ $comic['title'] }}</span>
+                    <small class="comics-genre">{{ $comic['type'] }}</small>
+                </div>
+            </a>
         </div>
         <!-- /Singola CARD magazine -->
         @endforeach
@@ -41,3 +43,5 @@
             @endforeach
     </section>
 @endsection
+
+

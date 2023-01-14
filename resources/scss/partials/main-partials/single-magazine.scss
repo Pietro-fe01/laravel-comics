@@ -1,0 +1,24 @@
+.ms-container-small{
+    width: 100%;
+    width: 1000px;
+    margin: auto;
+}
+
+.magazine__image{
+    background-color: var(--blue-color);
+    position: relative;
+    height: 80px;
+
+    & img{
+        position: absolute;
+        top: -235px;
+    }
+}
+
+.magazine__info{
+    background-color: white;
+    & .magazine__title{
+        color: var(--dark-single-magazine);
+        text-transform: uppercase;
+    }
+}
