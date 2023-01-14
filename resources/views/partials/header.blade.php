@@ -55,27 +55,29 @@
             </small>
         </div>
     </div>
-    <div class="header-bottom container d-flex align-items-center justify-content-between">
-        <a href="#">
-            <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo-DC-image">
-        </a>
-
-        <nav class="header__nav">
-            <ul class="d-flex list-unstyled my-0">
-                @foreach ($header_menu as $link)
-                    <li>
-                        <a href="{{ route(Str::lower($link['label'])) }}">
-                            {{ $link['label'] }}
-                            <i @if ($link['label'] === 'SHOP')) class="fa-solid fa-caret-down" @endif ></i>
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-        </nav>
-
-        <form action="" class="search-form">
-            <input type="search" name="" id="" placeholder="Search">
-            <i class="search-icon fa-solid fa-magnifying-glass"></i>
-        </form>
+    <div class="header-bottom">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="#">
+                <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo-DC-image">
+            </a>
+    
+            <nav class="header__nav">
+                <ul class="d-flex list-unstyled my-0">
+                    @foreach ($header_menu as $link)
+                        <li>
+                            <a href="{{ route(Str::lower($link['label'])) }}">
+                                {{ $link['label'] }}
+                                <i @if ($link['label'] === 'SHOP')) class="fa-solid fa-caret-down" @endif ></i>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </nav>
+    
+            <form action="" class="search-form">
+                <input type="search" name="" id="" placeholder="Search">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
     </div>
 </header>
