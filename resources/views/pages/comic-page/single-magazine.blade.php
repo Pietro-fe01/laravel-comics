@@ -47,7 +47,11 @@
                     <small>Art by:</small>
                     <p>
                         @foreach ($single_magazine['artists'] as $artist)
-                            {{ $artist }}<span class="text-dark">,</span>
+                            @if ($loop->index === count($single_magazine['artists']) - 1)
+                                {{ $artist }}
+                            @else
+                                {{ $artist }}<span class="text-dark">,</span>
+                            @endif
                         @endforeach
                     </p>
                 </div>
@@ -56,7 +60,11 @@
                     <small>Written by:</small>
                     <p>
                         @foreach ($single_magazine['writers'] as $writer)
-                            {{ $writer }}<span class="text-dark">,</span>
+                            @if ($loop->index === count($single_magazine['writers']) - 1)
+                                {{ $writer }}
+                            @else
+                                {{ $writer }}<span class="text-dark">,</span>
+                            @endif
                         @endforeach
                     </p>
                 </div>
