@@ -5,7 +5,6 @@
 @endsection
 
 @section('main-content')
-    {{-- @dd($action_comic_1000); --}}
     <section class="magazine__image">
         <div class="ms-container-small">
             <img src="{{ $single_magazine['thumb'] }}" alt="single-magazine-cover">
@@ -39,7 +38,7 @@
         </div>
     </section>
 
-    <section class="magazine__info text-dark pb-5">
+    <section class="magazine__info text-dark">
         <div class="ms-container-small row">
             <div class="col-6 pe-4">
                 <h4 class="py-4">Talent</h4>

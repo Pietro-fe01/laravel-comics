@@ -48,6 +48,7 @@
 .magazine__info{
     background-color: #f6f6f6;
     border-top: 1px solid #e3e3e3;
+    padding-bottom: 100px;
     & .magazine__art-by{
         border-top: 1px solid #e3e3e3;
         border-bottom: 1px solid #e3e3e3;
@@ -89,3 +90,23 @@
         }
     }
 }
+
+.magazine__pre-footer{
+    border-top: 1px solid #e3e3e3;
+    background-color: #f6f6f6;
+    & .pre-footer__card{
+        width: calc(100% / 4);
+        color: #9f9fb6;
+        border-left: 1px solid #e3e3e3;
+        &:last-child{
+            border-right: 1px solid #e3e3e3;
+        }
+        & img{
+            width: 30px;
+            height: 40px;
+            object-fit: contain;
+            filter: brightness(0.8);
+        }
+    }
+}
+

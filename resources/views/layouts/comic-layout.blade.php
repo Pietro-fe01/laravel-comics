@@ -1,3 +1,24 @@
+@php
+    $cards = [
+        [
+            'img' => 'buy-comics-digital-comics.png',
+            'card_name' => 'DIGITAL COMICS',
+        ],
+        [
+            'img' => 'buy-comics-subscriptions.png',
+            'card_name' => 'SHOP DC',
+        ],
+        [
+            'img' => 'buy-comics-shop-locator.png',
+            'card_name' => 'COMIC SHOP LOCATOR',
+        ],
+        [
+            'img' => 'buy-comics-merchandise.png',
+            'card_name' => 'SUBSCRIPTIONS',
+        ],
+    ];
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,7 +43,19 @@
             <section class="comics-jumbotron">
                 <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
             </section>
+
             @yield('main-content')
+
+            <section class="magazine__pre-footer text-dark">
+                <div class="ms-container-small d-flex">
+                    @foreach ($cards as $card)
+                    <div class="pre-footer__card d-flex justify-content-between py-3 px-3">
+                        <div class="pre-footer__card-name">{{ $card['card_name'] }}</div>
+                        <img src="{{ Vite::asset('resources/img/') }}{{ $card['img'] }}" alt="">
+                    </div>
+                    @endforeach
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
