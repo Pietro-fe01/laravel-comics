@@ -83,7 +83,51 @@
                     </div>
                     <div class="py-2 d-flex">
                         <small>On Sale Date:</small>
-                        <span>{{ $single_magazine['sale_date'] }}</span>
+                        @php
+                            function get_month_name($month){
+                                switch ($month) {
+                                    case '1':
+                                        return 'Jan';
+                                        break;
+                                    case '2':
+                                        return 'Feb';
+                                        break;
+                                    case '3':
+                                        return 'Mar';
+                                        break;
+                                    case '4':
+                                        return 'Apr';
+                                        break;
+                                    case '5':
+                                        return 'May';
+                                        break;
+                                    case '6':
+                                        return 'June';
+                                        break;
+                                    case '7':
+                                        return 'July';
+                                        break;
+                                    case '8':
+                                        return 'Aug';
+                                        break;
+                                    case '9':
+                                        return 'Sept';
+                                        break;
+                                    case '10':
+                                        return 'Oct';
+                                        break;
+                                    case '11':
+                                        return 'Nov';
+                                        break;
+                                    case '12':
+                                        return 'Dec';
+                                        break;
+                                }
+                            };
+
+                            $sale_date_split = explode("-", $single_magazine['sale_date']);
+                        @endphp
+                        <span>{{ get_month_name($sale_date_split[1]) . ' ' . $sale_date_split[2] . ' ' . $sale_date_split[0]; }}</span>
                     </div>
                 </div>
             </div>
