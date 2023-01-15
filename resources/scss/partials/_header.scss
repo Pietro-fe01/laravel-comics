@@ -1,9 +1,4 @@
 header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
     filter: drop-shadow(0px 0px 5px var(--blue-color));
     & .header-top{
         background-color: var(--blue-color);
