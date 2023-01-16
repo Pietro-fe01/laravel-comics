@@ -45,7 +45,7 @@ Route::get('/', function () {
 })->name('comics');
 
 // Pagine per ogni singolo fumetto
-Route::get('/comic/{index}', function ($index) {
+Route::get('/comic-magazine/{index}', function ($index) {
     $comics = config('comics-db');
 
     $single_magazine = $comics[$index];
