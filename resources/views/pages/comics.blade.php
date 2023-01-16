@@ -13,7 +13,7 @@
         @foreach ($comics_database as $comic)
         <!-- Singola CARD magazine -->
         <div class="comics-magazine">
-            <a href="{{ $comic['href_title'] }}"" class="text-decoration-none text-white">
+            <a href="{{ route('show', $loop->index) }}" class="text-decoration-none text-white">
                 <div class="comics-magazine__image">
                     <img src="{{ $comic['thumb'] }}" alt="">
                     <span class="comics-price">{{ $comic['price'] }}</span>
